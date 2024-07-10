@@ -6,3 +6,5 @@
 - Super Secure Key Management w/ MPC
 - Seed Phrase Free Wallet Management
 - Eliminates the need to install Wallet Extensions
+
+## NPM Package - [Arweave MPC SDK](https://www.npmjs.com/package/ar-mpc-sdk)
