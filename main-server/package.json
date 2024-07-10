@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@ardrive/turbo-sdk": "^1.9.0",
     "arweavekit": "^1.5.1",
     "axios": "^1.7.2",
     "cors": "^2.8.5",
