@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import main from "../assets/main.png"
-import customize from "../assets/customize.png"
-import secure from "../assets/secure.png"
+// import main from "../assets/main.png"
+// import customize from "../assets/customize.png"
+// import secure from "../assets/secure.png"
 
 export const SlideSection = () => {
     const [selected, setSelected] = useState(1);
@@ -9,8 +9,8 @@ export const SlideSection = () => {
     const handleClick = (index:any) => {
         setSelected(index);
     };
-
-    const images = [main, customize, secure];
+// 
+    // const images = [main, customize, secure];
     const content = [
         {
             title: "Seamless Integration for Developers",
@@ -42,11 +42,11 @@ export const SlideSection = () => {
                         </div>
                     ))}
                 </div>
-                <div className='hidden md:flex'>
+                {/* <div className='hidden md:flex'>
                     {selected !== null && (
                         <img className='w-[40rem]' src={images[selected]} alt="Selected" />
                     )}
-                </div>
+                </div> */}
             </div>
         </div>
     );
