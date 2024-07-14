@@ -55,10 +55,10 @@ export const Header = () => {
                         <a href="#features" className="flex items-center gap-2 cursor-pointer">
                             Features <FaAngleDown />
                         </a>
-                        {/* <Link to={"/docs"} className="cursor-pointer">Docs</Link> */}
-                        {/* <Link to={"/customize"}> */}
+                        <Link href={"/docs"} className="cursor-pointer">Docs</Link>
+                        <Link href={"/customize"}>
                             <SecondaryButton buttonName={"Customize"} />
-                        {/* </Link> */}
+                        </Link>
                         {/* <Button buttonName={"Dashboard"} /> */}
                     </div>
                 </div>

@@ -31,11 +31,11 @@ export const SlideSection = () => {
     return (
         <div>
             <div className="flex justify-around items-center">
-                <div className="">
+                <div className="ml-10 md:ml-0">
                     {content.map((item, index) => (
                         <div
                             key={index}
-                            className={`p-10 cursor-pointer ${selected === index ? 'border-l-4' : ''}`}
+                            className={`p-10 cursor-pointer ${selected === index ? 'border-l-4 ml-5' : ''}`}
                             onClick={() => handleClick(index)}
                             style={{ borderColor: selected === index ? 'black' : 'transparent' }}
                         >
