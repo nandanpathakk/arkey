@@ -4,14 +4,15 @@ import { Button } from "../elements/Button";
 import { SecondaryButton } from "../elements/SecondaryButton";
 import { MarqueeSlider } from "../components/MarqueeSlider";
 import { Card } from "../components/Card";
-import secure from "../assets/secure.png";
+import secure from "../assets/verified.png";
 import userControl from "../assets/userControl.png";
 import seamLess from "../assets/seamless.png";
 import effortLess from "../assets/effotLess.png";
 import { Footer } from "../components/Footer";
 import { InfoSection } from "../components/InfoSection";
 import { SlideSection } from "../components/SlideSection";
-import Ripple from "../effects/Ripple";
+// import Ripple from "../effects/Ripple";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
     return (
@@ -25,15 +26,20 @@ export const Home = () => {
                     </div>
                     <div className="text-md md:text-2xl pb-6 font-[inter]">
                         <div>Protecting your digital assets with advanced security innovations.</div>
-                        <Ripple width={20} height={20} x={-1} y={-1} className="[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] " />
+                        {/* <Ripple width={20} height={20} x={-1} y={-1} className="[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] " /> */}
                     </div>
                     <div className="flex items-center gap-4 md:gap-10">
-                        <div>
-                            <Button buttonName={"Get Started"} />
-                        </div>
-                        <div>
-                            <SecondaryButton buttonName={"View Docs"} />
-                        </div>
+                        <Link to={"/login"}>
+                            <div>
+                                <Button buttonName={"Get Started"} />
+                            </div>
+                        </Link>
+                        <Link to={"https://www.npmjs.com/package/ar-mpc-sdk"}>
+                            <div>
+                                <SecondaryButton buttonName={"View Docs"} />
+                            </div>
+                        </Link>
+
                     </div>
                 </div>
                 <div className="mt-16 md:mt-0 md:ml-10 md:block flex justify-center">
@@ -54,7 +60,7 @@ export const Home = () => {
                     <Card image={effortLess} tag={"Effortless Usability"} description={"Intuitive interface managing your digital assets straightforward and hassle-free."} />
                 </div>
             </div>
-            
+
             <div className="flex flex-col md:flex-row justify-center md:justify-around items-center text-center md:text-left my-12 px-4">
                 <div className="text-4xl md:text-5xl font-[barlow] font-semibold mb-8 md:mb-0">
                     <div>Modern Simplicity.</div>

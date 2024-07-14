@@ -28,7 +28,7 @@ export const Header = () => {
                         <a href="#features" className="flex items-center gap-1 cursor-pointer">
                             Features <FaAngleDown />
                         </a>
-                        <Link to={"/docs"} className="cursor-pointer">Docs</Link>
+                        <Link to={"https://www.npmjs.com/package/ar-mpc-sdk"} className="cursor-pointer">Docs</Link>
                     </nav>
                 </div>
                 <div className="flex items-center gap-4 md:gap-14">

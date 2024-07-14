@@ -22,9 +22,23 @@ const UploadData = () => {
     arweave.transactions.post(tx).then(console.log).catch(console.log);
     console.log(`https://arweave.net/${tx.id}`);
   };
+
+  const buttonStyle = {
+    padding: '10px 20px',
+    fontSize: '16px',
+    color: '#ffffff',
+    backgroundColor: '#000000',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease',
+  };
+
   return (
-    <div>
-      <button onClick={() => uploadDataToArweave()}>
+    <div style={{ display: 'flex', justifyContent: 'center'}}>
+      <button 
+      onClick={() => uploadDataToArweave()}
+      style={buttonStyle}>
         Upload Data to Arweave
       </button>
     </div>
